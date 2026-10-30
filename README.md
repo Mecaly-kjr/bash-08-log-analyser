@@ -6,7 +6,7 @@ loganalyse.sh turns a raw web server access log into a one-minute report.
 
 ## 📌 Problem Statements
 
-The website was slow and some pages "disappeared", but the answer is buried in thousands of log lines. This tool summarises the log: traffic, errors, busiest pages and visitors, broken links and data sent.
+The site was slow and some pages "disappeared", but the answer is buried in thousands of log lines. This tool summarises the log: traffic, errors, busiest pages and visitors, broken links and data sent.
 
 ----
 
