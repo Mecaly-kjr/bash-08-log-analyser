@@ -50,18 +50,38 @@ The site was slow and some pages "disappeared", but the answer is buried in thou
 
 ## ⚙ Installation & Setup
 
-clone the repository;
-'```bash
+Clone the repository
 
-git clone [https://github.com/Mecaly-kjr/bash-08-log-analyser.git]
+```bash
 
-cd bash-07-backup-tool
+git clone https://github.com/Mecaly-kjr/bash-08-log-analyser.git
 
-chmod +x backup.sh
+- Enter the project directory
 
- ./loganalyse.sh access.log
+cd bash-08-log-analyser
+
+- Give execution permission
+chmod +x loganalyse.sh make-sample-log.sh
+
+- Generate a sample access log
+./make-sample-log.sh 5000 > access.log
+
+- Run the log analyser
+./loganalyse.sh access.log
+```
 
 ----
+
+## Log Format
+
+This project uses Apache combined-style access logs.
+
+The script reads:
+
+- Field 1: IP address
+- Field 7: Requested page
+- Field 9: HTTP status code
+- Field 10: Response size in bytes
 
 ## 🧠 Challenges Faced
 
